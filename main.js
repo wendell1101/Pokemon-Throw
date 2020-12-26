@@ -84,7 +84,17 @@ generateLuckyPokemon = async (pokemons) => {
                         </div>
 
                         `;
-                        audio.play();
+                        // play open audio for 2 seconds
+                        setTimeout(()=>{
+
+                            audio.play();
+
+                            setTimeout(()=>{
+                                audio.pause();
+                            }, 2000)
+
+                        }, 20)
+
                 }
             }, 1000);
 
