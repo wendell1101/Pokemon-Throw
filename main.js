@@ -27,8 +27,8 @@ btnStart.addEventListener('click', async () => {
         await showRandomPokemon(pokemon, i);
     }
     // plag bg music
-    let bgAudio = new Audio('./sounds/pokemon-bg-music.mp3');
-    bgAudio.play();
+    // let bgAudio = new Audio('./sounds/pokemon-bg-music.mp3');
+    // bgAudio.play();
     await generateLuckyPokemon(currentPokemons);
     document.getElementById('battle').removeAttribute('disabled');
 
